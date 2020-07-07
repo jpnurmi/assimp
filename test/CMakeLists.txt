@@ -150,6 +150,7 @@ SET( IMPORTERS
   #unit/ImportExport/IRR/utIrrImportExport.cpp
   unit/ImportExport/RAW/utRAWImportExport.cpp
   unit/ImportExport/Terragen/utTerragenImportExport.cpp
+  unit/ImportExport/utGcodeImporter.cpp
 )
 
 SET( MATERIAL

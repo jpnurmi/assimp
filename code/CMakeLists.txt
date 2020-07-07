@@ -359,6 +359,11 @@ ADD_ASSIMP_IMPORTER( CSM
   AssetLib/CSM/CSMLoader.h
 )
 
+ADD_ASSIMP_IMPORTER( GCODE
+  AssetLib/Gcode/GcodeLoader.cpp
+  AssetLib/Gcode/GcodeLoader.h
+)
+
 ADD_ASSIMP_IMPORTER( HMP
   AssetLib/HMP/HMPFileData.h
   AssetLib/HMP/HMPLoader.cpp

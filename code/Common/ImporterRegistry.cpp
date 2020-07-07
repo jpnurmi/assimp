@@ -198,6 +198,9 @@ corresponding preprocessor flag to selectively disable formats.
 #ifndef ASSIMP_BUILD_NO_M3D_IMPORTER
 #include "AssetLib/M3D/M3DImporter.h"
 #endif
+#ifndef ASSIMP_BUILD_NO_GCODE_IMPORTER
+#include "AssetLib/Gcode/GcodeLoader.h"
+#endif
 
 namespace Assimp {
 
@@ -354,6 +357,9 @@ void GetImporterInstanceList(std::vector<BaseImporter *> &out) {
 #endif
 #ifndef ASSIMP_BUILD_NO_MMD_IMPORTER
     out.push_back(new MMDImporter());
+#endif
+#ifndef ASSIMP_BUILD_NO_GCODE_IMPORTER
+    out.push_back(new GcodeImporter());
 #endif
     //#ifndef ASSIMP_BUILD_NO_STEP_IMPORTER
     //    out.push_back(new StepFile::StepFileImporter());
